@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Zhi Huang | IT Support Resume</title>
+  <title>Zhi Huang | IT Support Professional</title>
 
   <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
@@ -54,23 +54,26 @@
     h1 {
       font-size: 36px;
       margin: 0;
+      letter-spacing: -0.5px;
     }
 
     .title {
       color: var(--accent);
       font-weight: 600;
+      font-size: 1.2rem;
       min-height: 24px;
     }
 
     .contact {
       color: var(--muted);
       font-size: 14px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
     }
 
     section {
       margin-top: 40px;
-      opacity: 1; /* 修改为默认可见 */
-      transform: translateY(0); /* 默认不偏移 */
       transition: all 0.6s ease;
     }
 
@@ -80,6 +83,8 @@
       display: flex;
       align-items: center;
       gap: 10px;
+      border-bottom: 1px solid #1f2933;
+      padding-bottom: 8px;
     }
 
     h2 i {
@@ -92,7 +97,7 @@
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 20px;
     }
 
@@ -109,12 +114,19 @@
       border-color: var(--accent);
     }
 
+    .box strong {
+      display: block;
+      margin-bottom: 10px;
+      color: var(--accent);
+    }
+
     ul {
       padding-left: 18px;
     }
 
     li {
       margin-bottom: 8px;
+      font-size: 14px;
     }
 
     footer {
@@ -138,43 +150,50 @@
         <h1>Zhi Huang (Anthony)</h1>
         <div class="title"></div>
         <div class="contact">
-          <i class="fa-solid fa-location-dot"></i> Carnegie, VIC &nbsp; | &nbsp;
-          <i class="fa-solid fa-envelope"></i> hzhi83512@gmail.com &nbsp; | &nbsp;
-          <i class="fa-solid fa-phone"></i> 0467842533
+          <span><i class="fa-solid fa-location-dot"></i> Carnegie, VIC</span>
+          <span><i class="fa-solid fa-envelope"></i> hzhi83512@gmail.com</span>
+          <span><i class="fa-solid fa-phone"></i> 0467842533</span>
+          <span><i class="fa-brands fa-linkedin"></i> LinkedIn (Optional)</span>
         </div>
       </header>
 
       <!-- Profile Section -->
       <section>
         <h2><i class="fa-solid fa-user"></i> Profile</h2>
-        <p>IT graduate from Monash University with a strong interest in IT Support and Help Desk roles. Experienced with Windows and macOS environments, basic networking, and cloud fundamentals. Known for clear communication, patience, and a strong customer-service mindset.</p>
+        <p>
+          Motivated IT Graduate from <strong>Monash University</strong> with a proven ability to quickly master new technologies and adapt to <strong>fast-paced corporate environments</strong>. I thrive on challenges and enjoy real-time communication and feedback to ensure high-quality service delivery. Passionate about <strong>End-user Support</strong>, technical problem-solving, and optimizing IT workflows through automation.
+        </p>
       </section>
 
       <!-- Skills Section -->
       <section>
-        <h2><i class="fa-solid fa-screwdriver-wrench"></i> Skills</h2>
+        <h2><i class="fa-solid fa-screwdriver-wrench"></i> Technical Skills</h2>
         <div class="grid">
           <div class="box">
-            <strong>Operating Systems</strong>
+            <strong>Operating Systems & Cloud</strong>
             <ul>
-              <li>Windows 10 / 11</li>
-              <li>macOS</li>
+              <li>Windows 10/11 Pro Administration</li>
+              <li>macOS Enterprise Support</li>
+              <li>Microsoft 365 & Entra ID (Azure AD)</li>
+              <li>Azure Cloud Fundamentals (AZ-900)</li>
             </ul>
           </div>
           <div class="box">
-            <strong>IT Support</strong>
+            <strong>IT Support & Operations</strong>
             <ul>
-              <li>Password resets</li>
-              <li>Software installation</li>
-              <li>Basic troubleshooting</li>
+              <li>Level 1 Incident Management</li>
+              <li>Active Directory: Password Resets & MFA</li>
+              <li>Software Deployment & Asset Management</li>
+              <li>SLA-driven Support Mindset</li>
             </ul>
           </div>
           <div class="box">
-            <strong>Networking & Tools</strong>
+            <strong>Networking & Automation</strong>
             <ul>
-              <li>TCP/IP, DNS, DHCP (basic)</li>
-              <li>Azure Fundamentals</li>
-              <li>Git, VS Code</li>
+              <li>TCP/IP, DNS, DHCP & VPN Config</li>
+              <li><strong>PowerShell Scripting</strong> for Automation</li>
+              <li>Hardware Diagnostics (Laptops/Printers)</li>
+              <li>Git & Version Control</li>
             </ul>
           </div>
         </div>
@@ -182,53 +201,63 @@
 
       <!-- Projects Section -->
       <section>
-        <h2><i class="fa-solid fa-folder-open"></i> Projects</h2>
+        <h2><i class="fa-solid fa-folder-open"></i> Key Projects</h2>
         <div class="grid">
           <div class="box">
-            <strong>IT Support Practice Lab</strong>
+            <strong>IT Automation & Practice Lab</strong>
             <ul>
-              <li>Handled password resets and user account issues</li>
-              <li>Installed and configured common software</li>
-              <li>Performed basic troubleshooting for system issues</li>
+              <li>Simulated a corporate environment to manage <strong>User Lifecycle</strong> via Microsoft Entra ID.</li>
+              <li>Developed <strong>PowerShell scripts</strong> to automate routine tasks, improving efficiency.</li>
+              <li>Practiced ticket resolution workflows following <strong>ITIL frameworks</strong>.</li>
             </ul>
-            <p style="color:#9ca3af; font-size:14px;">Tools: Windows, macOS, Ticketing concepts</p>
+            <p style="color:#9ca3af; font-size:13px;">Keywords: PowerShell, Azure, Help Desk Logic</p>
           </div>
 
           <div class="box">
-            <strong>Resume Website (GitHub Pages)</strong>
+            <strong>Personal Cloud Infrastructure</strong>
             <ul>
-              <li>Built a responsive resume website using HTML & CSS</li>
-              <li>Deployed and maintained using GitHub Pages</li>
-              <li>Version control with GitHub</li>
+              <li>Built and maintained a responsive portfolio via GitHub Pages.</li>
+              <li>Implemented custom CSS/JS for real-time user interaction.</li>
+              <li>Managed domain records and basic web security protocols.</li>
             </ul>
-            <p style="color:#9ca3af; font-size:14px;">Tools: HTML, CSS, GitHub</p>
+            <p style="color:#9ca3af; font-size:13px;">Keywords: Web Support, DNS, GitHub</p>
           </div>
 
           <div class="box">
-            <strong>Home IT Setup & Troubleshooting</strong>
+            <strong>Hardware Diagnostics Lab</strong>
             <ul>
-              <li>Configured Windows and macOS systems</li>
-              <li>Managed user accounts and system settings</li>
-              <li>Resolved common hardware and software issues</li>
+              <li>Hands-on experience in hardware upgrades (RAM/SSD) and BIOS configuration.</li>
+              <li>Optimized OS performance for low-spec environments.</li>
+              <li>Resolved complex driver conflicts and network connectivity issues.</li>
             </ul>
-            <p style="color:#9ca3af; font-size:14px;">Tools: Windows, macOS</p>
+            <p style="color:#9ca3af; font-size:13px;">Keywords: Hardware Support, Optimization</p>
           </div>
         </div>
       </section>
 
       <!-- Education Section -->
       <section>
-        <h2><i class="fa-solid fa-graduation-cap"></i> Education</h2>
-        <ul>
-          <li><strong>Google IT Support</strong> – in progress</li>
-          <li><strong>AZ-900</strong> – in progress</li>
-          <li><strong>Bachelor of Information Technology</strong> – Monash University</li>
-          <li><strong>Diploma of Business</strong> – Monash University</li>
-        </ul>
+        <h2><i class="fa-solid fa-graduation-cap"></i> Education & Certifications</h2>
+        <div class="grid">
+          <div class="box" style="background: none; border: none; padding: 0;">
+            <strong>Formal Education</strong>
+            <ul>
+              <li><strong>Bachelor of Information Technology</strong><br>Monash University</li>
+              <li><strong>Diploma of Business</strong><br>Monash College</li>
+            </ul>
+          </div>
+          <div class="box" style="background: none; border: none; padding: 0;">
+            <strong>Industry Certifications</strong>
+            <ul>
+              <li><strong>Microsoft Certified: Azure Fundamentals (AZ-900)</strong> - <em>Targeting Completion Jan 2026</em></li>
+              <li><strong>Google IT Support Professional Certificate</strong> - <em>In Progress</em></li>
+            </ul>
+          </div>
+        </div>
       </section>
 
       <footer>
-        © 2026 Zhi Huang · IT Support Resume
+        © 2026 Zhi Huang (Anthony) · Built for the Australian IT Market
       </footer>
     </div>
   </div>
@@ -236,7 +265,7 @@
   <!-- JavaScript -->
   <script>
     // Typing effect
-    const text = "IT Support / Help Desk Graduate";
+    const text = "IT Support Engineer | Help Desk Professional";
     const titleEl = document.querySelector(".title");
     let i = 0;
 
@@ -244,21 +273,19 @@
       if (i < text.length) {
         titleEl.textContent += text.charAt(i);
         i++;
-        setTimeout(typeEffect, 60);
+        setTimeout(typeEffect, 50);
       }
     }
     typeEffect();
 
-    // Scroll reveal (optional subtle animation)
+    // Scroll reveal
     const sections = document.querySelectorAll("section");
-    const reveal = () => {
+    window.addEventListener("DOMContentLoaded", () => {
       sections.forEach(sec => {
         sec.style.opacity = 1;
         sec.style.transform = 'translateY(0)';
       });
-    };
-
-    window.addEventListener("DOMContentLoaded", reveal);
+    });
   </script>
 </body>
 </html>
