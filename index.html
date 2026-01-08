@@ -59,6 +59,7 @@
     .title {
       color: var(--accent);
       font-weight: 600;
+      min-height: 24px;
     }
 
     .contact {
@@ -68,6 +69,9 @@
 
     section {
       margin-top: 40px;
+      opacity: 1; /* 修改为默认可见 */
+      transform: translateY(0); /* 默认不偏移 */
+      transition: all 0.6s ease;
     }
 
     h2 {
@@ -97,6 +101,12 @@
       padding: 20px;
       border-radius: 12px;
       border: 1px solid #1f2933;
+      transition: transform 0.3s ease, border-color 0.3s ease;
+    }
+
+    .box:hover {
+      transform: translateY(-4px);
+      border-color: var(--accent);
     }
 
     ul {
@@ -120,26 +130,27 @@
     }
   </style>
 </head>
+
 <body>
   <div class="container">
     <div class="card">
       <header>
         <h1>Zhi Huang (Anthony)</h1>
-        <div class="title">IT Support / Help Desk Graduate</div>
+        <div class="title"></div>
         <div class="contact">
           <i class="fa-solid fa-location-dot"></i> Carnegie, VIC &nbsp; | &nbsp;
           <i class="fa-solid fa-envelope"></i> hzhi83512@gmail.com &nbsp; | &nbsp;
-          <i class="fa-solid fa-phone"></i> 0467842533 &nbsp; | &nbsp;
+          <i class="fa-solid fa-phone"></i> 0467842533
         </div>
       </header>
 
+      <!-- Profile Section -->
       <section>
         <h2><i class="fa-solid fa-user"></i> Profile</h2>
-        <p>
-          IT graduate from Monash University with a strong interest in IT Support and Help Desk roles. Experienced with Windows and macOS environments, basic networking, and cloud fundamentals. Known for clear communication, patience, and a strong customer-service mindset.
-        </p>
+        <p>IT graduate from Monash University with a strong interest in IT Support and Help Desk roles. Experienced with Windows and macOS environments, basic networking, and cloud fundamentals. Known for clear communication, patience, and a strong customer-service mindset.</p>
       </section>
 
+      <!-- Skills Section -->
       <section>
         <h2><i class="fa-solid fa-screwdriver-wrench"></i> Skills</h2>
         <div class="grid">
@@ -169,11 +180,11 @@
         </div>
       </section>
 
+      <!-- Projects Section -->
       <section>
         <h2><i class="fa-solid fa-folder-open"></i> Projects</h2>
         <div class="grid">
           <div class="box">
-            
             <strong>IT Support Practice Lab</strong>
             <ul>
               <li>Handled password resets and user account issues</li>
@@ -184,7 +195,6 @@
           </div>
 
           <div class="box">
-            
             <strong>Resume Website (GitHub Pages)</strong>
             <ul>
               <li>Built a responsive resume website using HTML & CSS</li>
@@ -195,7 +205,6 @@
           </div>
 
           <div class="box">
-            
             <strong>Home IT Setup & Troubleshooting</strong>
             <ul>
               <li>Configured Windows and macOS systems</li>
@@ -207,10 +216,11 @@
         </div>
       </section>
 
+      <!-- Education Section -->
       <section>
         <h2><i class="fa-solid fa-graduation-cap"></i> Education</h2>
         <ul>
-          <li><strong>Google It suport </strong> – in progress</li>
+          <li><strong>Google IT Support</strong> – in progress</li>
           <li><strong>AZ-900</strong> – in progress</li>
           <li><strong>Bachelor of Information Technology</strong> – Monash University</li>
           <li><strong>Diploma of Business</strong> – Monash University</li>
@@ -222,5 +232,33 @@
       </footer>
     </div>
   </div>
+
+  <!-- JavaScript -->
+  <script>
+    // Typing effect
+    const text = "IT Support / Help Desk Graduate";
+    const titleEl = document.querySelector(".title");
+    let i = 0;
+
+    function typeEffect() {
+      if (i < text.length) {
+        titleEl.textContent += text.charAt(i);
+        i++;
+        setTimeout(typeEffect, 60);
+      }
+    }
+    typeEffect();
+
+    // Scroll reveal (optional subtle animation)
+    const sections = document.querySelectorAll("section");
+    const reveal = () => {
+      sections.forEach(sec => {
+        sec.style.opacity = 1;
+        sec.style.transform = 'translateY(0)';
+      });
+    };
+
+    window.addEventListener("DOMContentLoaded", reveal);
+  </script>
 </body>
 </html>
